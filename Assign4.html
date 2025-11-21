@@ -1,0 +1,23 @@
+<p>Paragraf contoh</p>
+<h1>Judul 1</h1>
+<h2>Judul 2</h2>
+<ol>
+    <li>Item pertama</li>
+</ol>
+
+<script>
+    // Ambil masing-masing elemen
+    const p  = document.getElementsByTagName("p")[0];
+    const h1 = document.getElementsByTagName("h1")[0];
+    const h2 = document.getElementsByTagName("h2")[0];
+    const ol = document.getElementsByTagName("ol")[0];
+    const li = document.getElementsByTagName("li")[0];
+
+    // Simpan dalam array
+    const elements = [p, h1, h2, ol, li];
+
+    // Tampilkan nama tag (pasti hanya 5)
+    elements.forEach(el => {
+        console.log(el.tagName.toLowerCase());
+    });
+</script>

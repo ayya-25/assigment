@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 5 input element dengan name yang semua -->
+    <input name="demo" type="text"><br>
+    <input name="demo" type="text"><br>
+    <input name="demo" type="text"><br>
+    <input name="demo" type="text"><br>
+    <input name="demo" type="text"><br>
+
+    <p id="result"></p>
+
+    <script>
+        //ambill semua element dengan name "demo"
+        let list =document.getElementsByName("demo");
+        //variable untuk menampung hasil 
+        let output = "";
+        //loop semua element dan ambil semua tagName-nya
+        for (let i = 0; i < list.length; i++) {
+            output += list[i].tagName + " " + (i + 1) + "<br>";
+        } 
+        // tampilkan ke paragraph result
+        document.getElementById("result").innerHTML =output;
+    </script>
+</body>
+</html>

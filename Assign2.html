@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 02</title>
+</head>
+<body>
+
+    <!-- 5 paragraph tanpa content -->
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <p class="demo"></p>
+
+    <script>
+        // ambil semua elemen dengan class "demo"
+        let list = document.getElementsByClassName("demo");
+
+        // loop untuk memasukkan isi
+        for (let i = 0; i < list.length; i++) {
+            list[i].innerHTML = "Paragraph " + (i + 1);
+        }
+    </script>
+
+</body>
+</html>

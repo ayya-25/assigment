@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Assignment 05</h2>
+
+<div id="container"></div>
+
+<script>
+    function newElement(number, tag) {
+
+        // Cek apakah tag yang diminta adalah 'p'
+        if (tag.toLowerCase() !== "p") {
+            alert("Hanya boleh membuat elemen <p>!");
+            return;
+        }
+
+        // Loop untuk membuat 'number' elemen <p>
+        for (let i = 0; i < number; i++) {
+            let newP = document.createElement("p");
+            newP.innerText = "Paragraph " + (i + 1);
+            document.getElementById("container").appendChild(newP);
+        }
+    }
+
+    // Contoh pemanggilan: buat 3 paragraf
+    newElement(3, "p");
+</script>
+
+</body>
+</html>
